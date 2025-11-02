@@ -1,0 +1,19 @@
+Descripción del proceso del modelo de negocio Marketplace Connecta:
+
+Marketplace Connecta es una plataforma digital cuyo objetivo es facilitar la conexión entre proveedores y clientes, permitiendo realizar transacciones de productos y servicios de forma rápida, segura y organizada.
+
+Para que la plataforma funcione correctamente, es necesario contar con usuarios registrados con los datos (id_usuario, nombre, correo, contraseña, tipo_usuario), donde el tipo de usuario puede ser proveedor o cliente.
+
+Un proveedor puede ofrecer uno o varios productos o servicios en la plataforma con los datos (id_producto, nombre, descripción, categoría, precio y disponibilidad).
+Cada proveedor puede tener además información adicional como (id_proveedor, nombre_empresa, dirección, teléfono, calificación y métodos de pago aceptados).
+
+Por otro lado, un cliente puede explorar el catálogo, seleccionar productos, realizar pedidos y dejar reseñas. Los datos de cada cliente incluyen (id_cliente, nombre, dirección, teléfono y correo electrónico).
+
+Cuando un cliente realiza una compra, se genera una orden o pedido con los datos (id_pedido, fecha_pedido, total, estado_pedido y método_pago).
+Un pedido puede incluir uno o varios productos y debe estar asociado tanto al cliente que lo realiza como al proveedor que lo recibe.
+
+Además, la plataforma gestiona las transacciones con los datos (id_transacción, fecha_transacción, monto_total, tipo_pago, estado_transacción) y emite facturas digitales (id_factura, fecha_emisión, subtotal, impuestos, monto_total, método_pago) para garantizar la transparencia de las operaciones.
+
+El sistema también permite que los clientes contacten directamente con los proveedores, pudiendo enviar mensajes o solicitudes de cotización, con los datos (id_contacto, fecha_contacto, mensaje, id_cliente, id_proveedor).
+
+Finalmente, el administrador del sistema supervisa el correcto funcionamiento de la plataforma, gestiona usuarios, controla los pagos y monitorea las estadísticas generales del sitio, garantizando así un entorno confiable y eficiente para todos los participantes.
