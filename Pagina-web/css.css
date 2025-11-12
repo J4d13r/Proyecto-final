@@ -44,16 +44,47 @@ color: #005BD1;
 .iniciar-seccion {
     background-color: #B8D7FF;
     color: #eb0a0aee;
+    transition: background-color 0.17s
+}
+
+.iniciar-seccion:hover {
+
+background-color: #8ABDFF;
+
+
 }
 
 
 
 .registrarse {
 
-    background-color: #005BD1
+    background-color: #005BD1;
+    transition: background-color 0.17s ease;
 }
 
+.registrarse:hover {
 
+background-color: #2E89FF;
+
+
+}
+
+.navar a {
+
+padding: 8px;
+border-radius: 4px;
+transition: background-color 0.27s
+
+}
+
+.navar a:hover {
+
+background-color: #999;
+
+
+
+
+}
 
 .logo a,
 .navar a,
