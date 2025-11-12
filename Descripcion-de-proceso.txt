@@ -9,7 +9,7 @@ Cada proveedor puede tener además información adicional como (id_proveedor, no
 
 Por otro lado, un cliente puede explorar el catálogo, seleccionar productos, realizar pedidos y dejar reseñas. Los datos de cada cliente incluyen (id_cliente, nombre, dirección, teléfono y correo electrónico).
 
-Cuando un cliente realiza una compra, se genera una orden o pedido con los datos (id_pedido, fecha_pedido, total, estado_pedido y método_pago).
+Cuando un cliente realiza una compra, se genera un pedido con los datos (id_pedido, fecha_pedido, total, estado_pedido y método_pago).
 Un pedido puede incluir uno o varios productos y debe estar asociado tanto al cliente que lo realiza como al proveedor que lo recibe.
 
 Además, la plataforma gestiona las transacciones con los datos (id_transacción, fecha_transacción, monto_total, tipo_pago, estado_transacción) y emite facturas digitales (id_factura, fecha_emisión, subtotal, impuestos, monto_total, método_pago) para garantizar la transparencia de las operaciones.

@@ -1,0 +1,71 @@
+body {
+
+margin: 0;
+background-color: #ddd;
+font-family: sans-serif;
+
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+background-color: #fff;
+padding: 10px 10px;
+flex-wrap: wrap;
+box-shadow: 0 0 3px #000;
+gap: 20px;
+}
+
+.header a {
+
+text-decoration: none;
+color: #222
+
+}
+
+.login a {
+
+padding: 7px ;
+border-radius: 5px;
+
+}
+
+.iniciar-seccion {
+background-color: #B8D7FF;
+ color: #eb0a0aee ;
+}
+
+   
+
+.registrarse {
+
+background-color: #005BD1
+
+
+}
+
+
+
+.logo a, .navar a, .login a{
+
+    margin: 23px;
+
+}
+
+@media screen and (max-width: 768px) {
+    
+.navar a {
+
+margin: 6px;
+
+}
+
+
+.login a {
+
+margin: 0px;
+
+}
+
+    
+}
