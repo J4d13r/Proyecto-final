@@ -1,71 +1,105 @@
 body {
 
-margin: 0;
-background-color: #ddd;
-font-family: sans-serif;
+    margin: 0;
+    background-color: #ddd;
+    font-family: sans-serif;
 
 }
 
 .header {
-display: flex;
-justify-content: space-between;
-background-color: #fff;
-padding: 10px 10px;
-flex-wrap: wrap;
-box-shadow: 0 0 3px #000;
-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 3px #000;
+    gap: 20px;
 }
 
 .header a {
 
-text-decoration: none;
-color: #222
-
+    text-decoration: none;
+    color: #222
 }
 
 .login a {
 
-padding: 7px ;
-border-radius: 5px;
+    padding: 7px;
+    border-radius: 5px;
+    
+}
+
+.login a:first-child {
+
+color: #ddd;
+
+}
+
+.login a:last-child {
+
+color: #005BD1;
 
 }
 
 .iniciar-seccion {
-background-color: #B8D7FF;
- color: #eb0a0aee ;
+    background-color: #B8D7FF;
+    color: #eb0a0aee;
 }
 
-   
+
 
 .registrarse {
 
-background-color: #005BD1
-
-
+    background-color: #005BD1
 }
 
 
 
-.logo a, .navar a, .login a{
+.logo a,
+.navar a,
+.login a {
 
     margin: 23px;
 
 }
 
 @media screen and (max-width: 768px) {
-    
-.navar a {
 
-margin: 6px;
+    .navar a {
+
+        margin: 6px;
+
+    }
+
+
+    .login a,
+    .logo a {
+
+        margin: 0px;
+
+    }
+
 
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
 
-.login a {
+    .navar {
 
-margin: 0px;
+        margin: 0;
 
-}
+    }
 
-    
+
+    .login a {
+
+        margin: 0;
+    }
+
+    .navar a {
+
+        margin: 7px;
+
+    }
+
 }
