@@ -1,8 +1,16 @@
+* {
+
+box-sizing: border-box;
+
+}
+
+
 body {
 
     margin: 0;
-    background-color: #ddd;
+    background-color: #F5F5F5;
     font-family: sans-serif;
+    font-size: 1rem;
 
 }
 
@@ -10,10 +18,15 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     flex-wrap: wrap;
     box-shadow: 0 0 3px #000;
     gap: 20px;
+    position: fixed;     
+    top: 0;             
+    left: 0;
+    width: 100%;    
+    z-index: 1000;     
 }
 
 .header a {
@@ -58,7 +71,7 @@ background-color: #8ABDFF;
 
 .registrarse {
 
-    background-color: #005BD1;
+    background-color: #005A9c;
     transition: background-color 0.17s ease;
 }
 
@@ -94,12 +107,35 @@ background-color: #999;
 
 }
 
+.img1 img {
+
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+   
+
+}
+
+.primer-div {
+
+display: flex;
+background-color: #fff;
+margin-top: 27px;
+margin: 75px auto 0;
+max-width: 87%;
+min-height: 300px;
+padding: 25px;
+border-radius: 6px;
+font-size: 25px;
+
+}
+
 @media screen and (max-width: 768px) {
 
     .navar a {
 
         margin: 6px;
-
+display: none;
     }
 
 
