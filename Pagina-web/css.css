@@ -6,7 +6,7 @@ body {
   margin: 0;
   background-color: #F5F5F5;
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* HEADER */
@@ -14,9 +14,9 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  padding: 0.625rem 0.625rem;
+  padding: 1rem 1rem;
   flex-wrap: wrap;
-  box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #999;
   gap: 20px;
   position: fixed;
   top: 0;
@@ -106,7 +106,7 @@ body {
   flex-wrap: wrap;
   background-color: #fff;
   margin-top: 27px;
-  margin: 75px auto 0;
+  margin: 100px auto 0;
   max-width: 95%;
   max-height: 10%;
   padding: 40px;
@@ -123,8 +123,118 @@ body {
 .primer-div p {
   font-size: 18px;
   white-space: normal;
+  color:  #888;
 }
 
+.div2 {
+
+display: flex;
+justify-content:space-between;
+gap: 35px;
+margin: 40px;
+flex-wrap: wrap;
+
+}
+
+.div2-proveedor {
+
+max-width: 100%;
+background-color: #fff;
+padding: 30px;
+border-radius: 12px;
+flex: 1 1 300px;
+
+}
+.div2-proveedor p, .div2-cliente p {
+
+color:  #888;
+font-size: 16px;
+
+}
+
+
+
+.div2-proveedor h2, p, .div2-cliente h2, p{
+margin-left: 0px;
+white-space: normal;
+}
+
+
+
+
+.div2-cliente {
+max-width: 100%;
+background-color: #fff;
+padding: 30px;
+border-radius: 12px;
+flex: 1 1 300px;
+
+
+}
+
+.img-proveedor {
+
+width: 45px;
+margin: 0;
+padding: 0;
+background-color: #d2e4fa;
+border-radius: 50%;
+padding: 7px;
+
+
+}
+.img-cliente {
+
+width: 45px;
+margin: 0;
+padding: 0;
+background-color: #E5F5F1;
+border-radius: 50%;
+padding: 7px;
+
+}
+
+.btn-proveedor {
+
+padding: 11px;
+font-size: 18px;
+border-radius: 11px;
+background-color: #005A9c;
+color: #fff;
+border: 1px solid #8ABDFF;
+
+}
+.btn-proveedor:hover {
+
+padding: 11px;
+font-size: 18px;
+border-radius: 11px;
+background-color: #256390;
+color: #fff;
+border: 1px solid #8ABDFF;
+
+}
+.btn-cliente {
+
+padding: 11px;
+font-size: 18px;
+border-radius: 11px;
+background-color: #1AA585;
+color: #fff;
+border: 1px solid #7de4cc;
+
+}
+
+.btn-cliente:hover {
+
+padding: 11px;
+font-size: 18px;
+border-radius: 11px;
+background-color: #399d86;
+color: #fff;
+border: 1px solid #7de4cc;
+
+}
 
 
 /* MEDIA QUERIES -------------------- */
@@ -140,7 +250,13 @@ body {
     margin: 0px;
   }
 
+  .primer-div {
 
+margin-top: 90px;
+
+  }
+
+ 
 
 }
 
