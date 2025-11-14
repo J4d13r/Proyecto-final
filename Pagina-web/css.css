@@ -1,172 +1,160 @@
 * {
-
-box-sizing: border-box;
-
+  box-sizing: border-box;
 }
-
 
 body {
-
-    margin: 0;
-    background-color: #F5F5F5;
-    font-family: sans-serif;
-    font-size: 1rem;
-
+  margin: 0;
+  background-color: #F5F5F5;
+  font-family: sans-serif;
+  font-size: 1rem;
 }
 
+/* HEADER */
 .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 0.625rem 0.625rem;
-    flex-wrap: wrap;
-    box-shadow: 0 0 3px #000;
-    gap: 20px;
-    position: fixed;     
-    top: 0;             
-    left: 0;
-    width: 100%;    
-    z-index: 1000;     
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.625rem 0.625rem;
+  flex-wrap: wrap;
+  box-shadow: 0 0 2px #000;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header a {
-
-    text-decoration: none;
-    color: #222
+  text-decoration: none;
+  color: #222;
 }
 
+/* LOGIN */
 .login a {
-
-    padding: 7px;
-    border-radius: 5px;
-    
+  padding: 7px;
+  border-radius: 5px;
 }
 
 .login a:first-child {
-
-color: #ddd;
-
+  color: #ddd;
 }
 
 .login a:last-child {
-
-color: #005BD1;
-
+  color: #005BD1;
 }
 
 .iniciar-seccion {
-    background-color: #B8D7FF;
-    color: #eb0a0aee;
-    transition: background-color 0.17s
+  background-color: #B8D7FF;
+  color: #eb0a0aee;
+  transition: background-color 0.17s;
 }
 
 .iniciar-seccion:hover {
-
-background-color: #8ABDFF;
-
-
+  background-color: #8ABDFF;
 }
 
-
-
 .registrarse {
-
-    background-color: #005A9c;
-    transition: background-color 0.17s ease;
+  background-color: #005A9c;
+  transition: background-color 0.17s ease;
 }
 
 .registrarse:hover {
-
-background-color: #2E89FF;
-
-
+  background-color: #2E89FF;
 }
 
+/* NAV */
 .navar a {
-
-padding: 8px;
-border-radius: 4px;
-transition: background-color 0.27s
-
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.27s;
 }
 
 .navar a:hover {
-
-background-color: #999;
-
-
-
-
+  background-color: #ccc;
 }
 
+/* MÁRGENES DE ELEMENTOS */
 .logo a,
 .navar a,
 .login a {
-
-    margin: 23px;
-
+  margin: 23px;
 }
 
-.img1 img {
-
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.3rem;
-   
-
+/* IMAGEN */
+.primer-div img {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 0.7rem;
+  object-fit: cover;
 }
 
+/* DIVS DEL MAIN */
+.divtext {
+  max-width: 100%;
+  flex: 1 1 200px; 
+}
+
+.img1 {
+  flex: 1 1 250px;
+}
+
+/* CONTENEDOR PRINCIPAL */
 .primer-div {
-
-display: flex;
-background-color: #fff;
-margin-top: 27px;
-margin: 75px auto 0;
-max-width: 87%;
-min-height: 300px;
-padding: 25px;
-border-radius: 6px;
-font-size: 25px;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-top: 27px;
+  margin: 75px auto 0;
+  max-width: 95%;
+  max-height: 10%;
+  padding: 40px;
+  border-radius: 17px;
+  gap: 40px;
 }
+
+.primer-div h1 {
+  font-size: 45px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.primer-div p {
+  font-size: 18px;
+  white-space: normal;
+}
+
+
+
+/* MEDIA QUERIES -------------------- */
 
 @media screen and (max-width: 768px) {
+  .navar a {
+    margin: 6px;
+    display: none;
+  }
 
-    .navar a {
+  .login a,
+  .logo a {
+    margin: 0px;
+  }
 
-        margin: 6px;
-display: none;
-    }
-
-
-    .login a,
-    .logo a {
-
-        margin: 0px;
-
-    }
 
 
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 
-    .navar {
+  .navar {
+    margin: 0;
+  }
 
-        margin: 0;
+  .login a {
+    margin: 0;
+  }
 
-    }
-
-
-    .login a {
-
-        margin: 0;
-    }
-
-    .navar a {
-
-        margin: 7px;
-
-    }
-
+  .navar a {
+    margin: 7px;
+  }
 }
