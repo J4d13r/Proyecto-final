@@ -194,7 +194,7 @@ padding: 7px;
 
 }
 
-.btn-proveedor {
+.link-proveedor {
 
 padding: 11px;
 font-size: 18px;
@@ -202,9 +202,10 @@ border-radius: 11px;
 background-color: #005A9c;
 color: #fff;
 border: 1px solid #8ABDFF;
+text-decoration: none;
 
 }
-.btn-proveedor:hover {
+.link-proveedor:hover {
 
 padding: 11px;
 font-size: 18px;
@@ -214,7 +215,7 @@ color: #fff;
 border: 1px solid #8ABDFF;
 
 }
-.btn-cliente {
+.link-cliente {
 
 padding: 11px;
 font-size: 18px;
@@ -222,10 +223,11 @@ border-radius: 11px;
 background-color: #1AA585;
 color: #fff;
 border: 1px solid #7de4cc;
+text-decoration: none;
 
 }
 
-.btn-cliente:hover {
+.link-cliente:hover {
 
 padding: 11px;
 font-size: 18px;
@@ -235,6 +237,7 @@ color: #fff;
 border: 1px solid #7de4cc;
 
 }
+
 
 
 /* MEDIA QUERIES -------------------- */
@@ -253,10 +256,41 @@ border: 1px solid #7de4cc;
   .primer-div {
 
 margin-top: 90px;
-
   }
+.link-proveedor {
 
- 
+padding: 11px;
+font-size: 16px;
+border-radius: 11px;
+background-color: #005A9c;
+color: #fff;
+border: 1px solid #8ABDFF;
+text-decoration: none;
+
+}
+.primer-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-top: 40px;
+  margin: 150px auto 0;
+  max-width: 95%;
+  max-height: 10%;
+  padding: 40px;
+  border-radius: 17px;
+  gap: 40px;
+}
+.link-proveedor:hover {
+
+padding: 11px;
+font-size: 16px;
+border-radius: 11px;
+background-color: #256390;
+color: #fff;
+border: 1px solid #8ABDFF;
+
+}
 
 }
 
