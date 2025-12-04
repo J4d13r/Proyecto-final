@@ -149,6 +149,7 @@ flex: 1 1 300px;
 
 color:  #888;
 font-size: 16px;
+margin-bottom: 35px;
 
 }
 
@@ -243,6 +244,12 @@ border: 1px solid #7de4cc;
 /* MEDIA QUERIES -------------------- */
 
 @media screen and (max-width: 768px) {
+  .primer-div h1 {
+  font-size: 34px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+  
   .navar a {
     margin: 6px;
     display: none;
@@ -268,19 +275,7 @@ border: 1px solid #8ABDFF;
 text-decoration: none;
 
 }
-.primer-div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #fff;
-  margin-top: 40px;
-  margin: 150px auto 0;
-  max-width: 95%;
-  max-height: 10%;
-  padding: 40px;
-  border-radius: 17px;
-  gap: 40px;
-}
+
 .link-proveedor:hover {
 
 padding: 11px;

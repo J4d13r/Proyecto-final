@@ -1,0 +1,49 @@
+Descripción del proceso del modelo de negocio JConnect (versión solicitada)
+
+JConnect es una plataforma digital diseñada para gestionar operaciones internas y externas entre empleados, proveedores y clientes, permitiendo realizar compras, validar solicitudes, procesar envíos y mantener comunicación por chat dentro de un entorno seguro y organizado.
+
+Para utilizar la plataforma, todo usuario debe estar registrado con sus datos básicos (id_usuario, nombre, correo, contraseña, teléfono y rol).
+Un usuario puede ser empleado, proveedor o cliente.
+
+Roles dentro del sistema
+
+Empleado: todo empleado registrado puede desempeñar uno de dos tipos de rol:
+
+Administrador: encargado de validar solicitudes, gestionar usuarios, supervisar pagos, pedidos y el funcionamiento general.
+
+Transportista: responsable de entregar los envíos generados a partir de los pedidos.
+
+Proveedor: un usuario normal no es proveedor automáticamente; debe realizar una solicitud para convertirse en proveedor con los datos (id_solicitud, id_usuario, fecha_solicitud, estado_solicitud).
+El administrador revisa y valida estas solicitudes, aprobando o rechazando el acceso del usuario al rol de proveedor.
+
+Gestión de productos y categorías
+
+Un proveedor puede publicar productos con los datos (id_producto, nombre, descripción, precio, disponibilidad y categoría).
+Cada producto pertenece a una categoría, lo que permite organizar el catálogo dentro de la plataforma.
+
+Proceso de compra y pedidos
+
+Un usuario (cliente) puede explorar los productos disponibles y realizar pedidos.
+Cada pedido registra (id_pedido, fecha, total y estado).
+Un pedido puede contener uno o varios productos.
+
+Envíos
+
+Todo pedido genera un envío asociado (id_envío, id_pedido, dirección, fecha_envío, fecha_entrega_estimada y estado_envío).
+Los envíos son atendidos exclusivamente por un transportista, quien se encarga de llevar el producto al cliente.
+
+Pagos y facturación
+
+Cada pedido debe tener un pago, con los datos (id_pago, id_pedido, monto, fecha_pago, método_pago).
+Al completarse el pago, el sistema genera automáticamente una factura asociada (id_factura, id_pago, fecha_emisión, número_factura).
+
+Reseñas
+
+Los usuarios pueden dejar reseñas después de su compra, registrando (id_reseña, id_usuario, id_producto, calificación, comentario, fecha).
+Cada reseña está asociada directamente al producto evaluado.
+
+Sistema de chat
+
+Los usuarios tienen acceso a un sistema de chat interno para comunicarse entre sí.
+Un chat registra (id_chat, participantes).
+Dentro del chat, se almacenan los mensajes enviados por los usuarios con (id_mensaje, id_chat, id_usuario, contenido, fecha_envío).
